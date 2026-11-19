@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>2 + 3 = 5</title>
+</head>
+<body>
+  <pre id="readme"></pre>
+  <script>
+    fetch("README.md").then(function (response) { return response.text(); }).then(function (text) {
+      document.getElementById("readme").textContent = text;
+    });
+  </script>
+</body>
+</html>
